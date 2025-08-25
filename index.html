@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeQuest - Aprenda Programação Brincando!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="title">🚀 CodeQuest</h1>
+            <p class="subtitle">Aprenda programação brincando!</p>
+        </header>
+
+        <main class="main">
+            <div class="game-container">
+                <div class="score-board">
+                    <div class="score-item">
+                        <span class="score-label">Pontuação:</span>
+                        <span class="score-value" id="score">0</span>
+                    </div>
+                    <div class="score-item">
+                        <span class="score-label">Nível:</span>
+                        <span class="score-value" id="level">1</span>
+                    </div>
+                </div>
+
+                <div class="game-area">
+                    <div class="code-editor">
+                        <h3>💻 Editor de Código</h3>
+                        <div class="code-input">
+                            <textarea id="codeInput" placeholder="Digite seu código aqui..."></textarea>
+                        </div>
+                        <button class="run-btn" onclick="runCode()">▶️ Executar</button>
+                    </div>
+
+                    <div class="output-area">
+                        <h3>📺 Resultado</h3>
+                        <div class="output-display" id="output">
+                            <p>Bem-vindo ao CodeQuest! Digite código e veja a mágica acontecer!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="challenges">
+                    <h3>🎯 Desafios</h3>
+                    <div class="challenge-list">
+                        <div class="challenge" onclick="loadChallenge(1)">
+                            <span class="challenge-number">1</span>
+                            <span class="challenge-title">Primeiro HTML</span>
+                            <span class="challenge-desc">Crie uma página simples</span>
+                        </div>
+                        <div class="challenge" onclick="loadChallenge(2)">
+                            <span class="challenge-number">2</span>
+                            <span class="challenge-title">Estilizando com CSS</span>
+                            <span class="challenge-desc">Adicione cores e estilos</span>
+                        </div>
+                        <div class="challenge" onclick="loadChallenge(3)">
+                            <span class="challenge-number">3</span>
+                            <span class="challenge-title">Layout Flexbox</span>
+                            <span class="challenge-desc">Organize elementos</span>
+                        </div>
+                        <div class="challenge" onclick="loadChallenge(4)">
+                            <span class="challenge-number">4</span>
+                            <span class="challenge-title">Animações CSS</span>
+                            <span class="challenge-desc">Faça elementos se moverem</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="achievements">
+                    <h3>🏆 Conquistas</h3>
+                    <div class="achievement-list" id="achievements">
+                        <div class="achievement locked">
+                            <span class="achievement-icon">🔒</span>
+                            <span class="achievement-text">Primeiro Código</span>
+                        </div>
+                        <div class="achievement locked">
+                            <span class="achievement-icon">🔒</span>
+                            <span class="achievement-text">Mestre HTML</span>
+                        </div>
+                        <div class="achievement locked">
+                            <span class="achievement-icon">🔒</span>
+                            <span class="achievement-text">Artista CSS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>Feito com ❤️ para aprender programação</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
